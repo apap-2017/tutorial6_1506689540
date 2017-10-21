@@ -1,0 +1,31 @@
+WRITE-UP TUTORIAL 6
+
+
+Pertanyaan 1:
+Tidak ada perubahan yang terjadi dengan penambahan ${iterationStatus.odd}
+
+Pertanyaan 2:
+th:if akan menjalankan perintah yang diberikan hanya jika kondisi yang diberikan terpenuhi,
+sedangkan th:unless akan otomatis menjalankan perintah, kecuali jika kondisi yang diberikan terpenuhi.
+Kondisi mereka booleh tidak sama, tapi jika begitu akan ada suatu kondisi mereka yang
+tidak termasuk ke salahsatu dari mereka atau ada kondisi yang termasuk kedua - duanya.
+Maka lebih baik disamakan.
+
+Pertanyaan 3:
+Tidak terjadi error. Tetapi seperti yang terlihat pada SS ke-3,
+Student No.2 yang memiliki GPA 3.48 tidak termasuk ke dalam dua kondisi,
+sehingga tidak ada yang dimunculkan. Menurut saya hasilnya sesuai.
+
+Pertanyaan 4:
+th:text="${student.gpa}>='3.49' ? 'Cum Laude!' : 'Sangat Memuaskan'"
+
+Pertanyaan 5:
+Fungsinya untuk mengganti bagian tersebut dengan fragment bagian yang berada di file fragment.html dalam
+folder fragments dengan nama 'header' dan 'footer'.
+
+Hal yang saya pelajari dari tutorial ini ialah,
+cara menggunakan DataTables untuk mempermudah menampilkan data,
+bentuk - bentuk conditional pada thymeleaf, menambahkan error page,
+menggunakan fragment, dan juga menambahkan dan menggunakan static files dalam project.
+
+Hasil Screenshoot : https://imgur.com/a/TJSK2
